@@ -1,0 +1,47 @@
+/* Loginotp.css */
+.loginotp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light gray background */
+  font-family: Arial, sans-serif;
+}
+
+.loginotp-container label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginotp-box {
+  background-color: #fff; /* White container */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  width: 400px;
+}
+
+.loginotp-box .input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.loginotp-box .input-row label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.loginotp-box input[type="text"] {
+  padding: 8px;
+  width: 70%; /* Make the input box larger */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}

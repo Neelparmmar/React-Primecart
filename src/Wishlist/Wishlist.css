@@ -1,0 +1,22 @@
+/* Wishlist.css */
+
+.wishlist-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 70vh;
+}
+
+.wishlist-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+/* 1568 */

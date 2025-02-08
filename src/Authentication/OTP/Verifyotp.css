@@ -1,0 +1,97 @@
+.verify-otp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.verify-otp-container label {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.verify-otp-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.verify-otp-box .input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.verify-otp-box .input-row label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.verify-otp-box input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.verify-otp-message {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.verify-otp-message.success {
+  color: green;
+}
+
+.verify-otp-message.error {
+  color: red;
+}
+.resend-otp {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resend-link {
+  color: coral; /* Default color */
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  margin-left: 5px;
+}
+
+.resend-link:hover {
+  color: coral; /* Maintain the same color on hover */
+  text-decoration: none; /* Prevent underline or any other decoration */
+}
+
+.resend-link[data-disabled="true"] {
+  color: darkslateblue;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.resend-link[data-disabled="false"] {
+  color: coral;
+  cursor: pointer;
+}
+
+.count-timer {
+  font-size: 1rem;
+  color: #ff4500;
+  margin-left: 10px;
+}

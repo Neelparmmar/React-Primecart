@@ -1,0 +1,120 @@
+/* Container */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(135deg, #f3f4f6, #a1c4fd);
+  animation: fadeIn 1s ease-in-out;
+  padding: 1rem;
+}
+
+/* Title */
+.register-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Form */
+.register-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Dropdown Styling */
+.register-select {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s;
+  background: #fff;
+  appearance: none;
+}
+
+/* Dropdown Hover */
+.register-select:focus {
+  border-color: darkslateblue;
+  box-shadow: 0 0 5px rgba(5, 96, 233, 0.5);
+}
+
+/* Label */
+.register-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Input */
+.register-input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Input Hover */
+.register-input:focus {
+  border-color: darkslateblue;
+}
+
+/* Button */
+.register-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: darkslateblue;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Button Hover */
+.register-button:hover {
+  background: indigo;
+}
+
+/* Login Link */
+.register-login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.register-login-link a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.register-login-link a:hover {
+  color: #388e3c;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

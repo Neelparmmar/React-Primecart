@@ -1,0 +1,105 @@
+.ad-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.ad-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.main-card {
+  width: 100%;
+  max-width: 300px; /* Restrict card width for uniformity */
+  box-sizing: border-box;
+  margin: auto; /* Center align within grid items */
+}
+
+.shop-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: midnightblue;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.page-text {
+  width: 10px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+/*  */
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+/* Page Number Buttons */
+.page-text {
+  all: unset;
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.page-text:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Active Page Button */
+.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Left and Right Buttons */
+.left-rightbtn:disabled {
+  background-color: #ccc;
+  color: #666;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+.left-rightbtn {
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  width: 4rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.left-rightbtn:hover {
+  background-color: #007bff;
+  color: white;
+}

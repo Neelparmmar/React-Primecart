@@ -1,0 +1,91 @@
+/* FAQ Page Styling */
+
+/* General container styling */
+.accordion {
+  margin: 5%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion items styling */
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-item:hover {
+  transform: scale(1.001);
+}
+
+/* Accordion header button */
+.accordion-button {
+  background-color: #ffffff;
+  color: #212529;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:not(.collapsed) {
+  /* background-color: #007bff; */
+  color: white;
+  border-radius: 0;
+}
+
+.accordion-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Accordion body */
+.accordion-body {
+  background-color: #f7f7f7;
+  font-size: 1rem;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+  border-top: 1px solid #ddd;
+}
+
+/* FAQ question font styling */
+.accordion-header button {
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Optional: Add smooth transition */
+.accordion-collapse {
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+/* Styling the strong tag in the accordion body */
+.accordion-body strong {
+  color: darkblue;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .accordion {
+    margin: 2%;
+    padding: 15px;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}

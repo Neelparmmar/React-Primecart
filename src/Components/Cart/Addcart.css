@@ -1,0 +1,157 @@
+.cart-container1 {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "ubuntu";
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.cart-table th {
+  background-color: #007ba7;
+  color: white;
+  text-transform: uppercase;
+}
+
+.cart-table td {
+  background-color: #ffffff;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Updated Delete Button */
+.delete-button1 {
+  background-color: darkblue; /* Theme-based blue */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button1:hover {
+  background-color: steelblue; /* Darker blue for hover */
+}
+
+.delete-button:active {
+  background-color: #004a6b; /* Even darker blue for active */
+}
+
+.grand-total1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkblue;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  text-align: right;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles */
+.cart-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* Quantity Control Styles */
+.qty-control1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qty-button1 {
+  background-color: darkblue; /* Theme-based blue */
+  color: white;
+  align-items: center;
+  display: flex;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.qty-button1:hover {
+  background-color: #005b81; /* Darker blue for hover */
+}
+
+.qty-control1 span {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* Updated Place Order Button */
+.place-order-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007ba7; /* Theme-based blue */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.place-order-button:hover {
+  background-color: #005b81; /* Darker blue on hover */
+  transform: scale(1.005); /* Slight zoom effect */
+}
+
+.place-order-button:active {
+  background-color: #004a6b; /* Even darker blue on click */
+  transform: scale(0.98); /* Slight compression effect */
+}

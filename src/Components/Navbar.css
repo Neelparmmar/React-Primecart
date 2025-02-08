@@ -1,0 +1,277 @@
+/* Navbar Container */
+.navbar-container {
+  font-family: "ubuntu";
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007ba7;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Left Section */
+
+/* Search Bar */
+.search-bar {
+  padding: 0.5rem 2.5rem; /* Extra padding to accommodate the icon */
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.search-bar:focus {
+  border-color: aquamarine;
+  box-shadow: 0 0 5px rgba(11, 220, 235, 0.5);
+}
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  top: 50%; /* Centers the icon vertically */
+  left: 230px; /* Adjust based on input width */
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: black;
+  cursor: pointer; /* Makes the icon clickable */
+}
+
+/* Center Section */
+.navbar-center {
+  flex: 3.5;
+  text-align: center;
+}
+
+.website-name {
+  font-size: 2rem;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 800;
+  color: white;
+}
+
+/* Right Section */
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: darkgrey;
+}
+
+.nav-text {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Second Navbar */
+.second-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0ffff;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "ubuntu";
+  flex-wrap: wrap;
+}
+
+/* Navbar Links */
+.nav-links {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out; /* Adjusted transition for smooth effect */
+}
+
+/* Navbar Links Hover Effect */
+.nav-links:hover {
+  /* Color change on hover */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+.nav-item {
+  list-style: none;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-center {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .second-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .website-name {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .nav-text {
+    font-size: 0.8rem;
+  }
+}
+/* Ensure the navbar container has relative positioning */
+
+/* Styles for the search input field */
+.search-bar {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Container for search suggestions */
+.suggestions-container {
+  position: absolute; /* Position suggestions below the input */
+  top: 100%; /* Align suggestions just below the input */
+  left: 0;
+  width: 40%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000; /* Ensure suggestions appear above other content */
+  display: block;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+/* Individual suggestion items */
+.suggestion-item {
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight suggestion on hover */
+.suggestion-item:hover {
+  background-color: #ddd;
+  color: black; /* Optional: Change text color on hover */
+}
+@media screen and (max-width: 1024px) {
+  .navbar-container {
+    padding: 1rem;
+  }
+
+  .search-icon {
+    left: 200px;
+  }
+}
+
+/* Mobile-specific Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-center {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .second-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-icon {
+    left: auto;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .website-name {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .nav-text {
+    font-size: 0.8rem;
+  }
+
+  .search-bar {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .suggestion-item {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+}
